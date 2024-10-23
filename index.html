@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<div class="nav-header">
+    <header>
+    
+    <div class="logo">
+        <a href="#"><i class="fa-solid fa-j"></i></a>
+        <div class="logo-text"> Jess Rey Simeon
+        </div>
+    </div>
+    <nav>
+    <div class="togglebtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="navlinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+</header>
+</div>
+    
+
+    <div class="home-header">
+        <div class="wrapper">
+        
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="image/jess.jpg" alt="profile pic">
+                </div>
+                <div id="home" class="hero-text">
+                    <h5>Hi I'm a <span class="typed"></span></h5>
+                    <h1>Jess Rey Simeon</h1>
+                    <p>
+                        I'm a self-taught developer, who continues to improve my skills and learn new things.
+                    </p>
+                    <div class="btn-group">
+                        <a href="resume.html" class="btn" target="_blank">Download</a>
+                        <a href="#contact" class="btn">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about-header">
+    <div class="wrapper">
+        <div class="container">
+        <div class="hero-text">
+                <h1>About Me</h1>
+                <p>Hello! My name is Jess Rey Simeon. I am an IT Assistant at PERT INC. specializing in networking, but I am also a self-taught developer.</p>
+            </div>
+            <div class="prog-lang">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-php"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+            </div>
+        </div> 
+        </div>
+    </div>
+
+    
+
+    <div id="contact" class="contact-header">
+    <div class="wrapper">
+        <div class="container">
+        <div class="hero-text">
+                <h1>Contact Me</h1>
+                <p>I'm glad to get more opportunities</p><br>
+                <form action="contact-form">
+                    <p>Username</p>
+                    <input id="username" type="text" placeholder="Username"><br><br>
+                    <p>Email</p>
+                    <input type="email" placeholder="Eg. xxx@gmail.com"><br><br>
+                    <p>Mobile Number</p>
+                    <input type="number" placeholder="Number"><br><br>
+                    <p>Message</p>
+                    <input type="text" placeholder="Send your concerns here."><br><br>
+                    <input type="submit" placeholder="Send"><br><br>
+                </form>
+                <div class="social">
+                        <a href="https://www.facebook.com/jessrey.simeon.1" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/jr_simoon/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Mobztadz187" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+    </div>
+    
+        </div>
+            
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var options = {
+            strings: ["Frontend Developer", "UX Designer", "Web Developer"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        };
+        var typed = new Typed(".typed", options);
+document.querySelectorAll('.nav-header a').forEach(link => {
+    link.addEventListener('click', function() {
+        var nav = document.querySelector('.nav-header');
+        nav.classList.add('scrolled'); 
+    });
+});
+
+document.querySelectorAll('.nav-header a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); 
+        const targetId = this.getAttribute('href'); 
+        const targetElement = document.querySelector(targetId);
+        const offsetPosition = targetElement.getBoundingClientRect().top + window.scrollY - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+</body>
+</html>
