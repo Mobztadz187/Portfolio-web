@@ -133,6 +133,7 @@ document.querySelectorAll('.nav-header a').forEach(link => {
         e.preventDefault(); 
         const targetId = this.getAttribute('href'); 
         const targetElement = document.querySelector(targetId);
+        
         const offsetPosition = targetElement.getBoundingClientRect().top + window.scrollY - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
 
         window.scrollTo({
