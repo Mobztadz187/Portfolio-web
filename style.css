@@ -123,7 +123,8 @@ nav .navlinks li a{
     justify-content: space-around;
     align-items: center;
     padding: 4rem;
-
+    max-width: 800px;
+    margin: 0 auto;
 }
 .container .hero-pic{
     width: 300px;
