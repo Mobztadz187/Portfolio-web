@@ -123,6 +123,7 @@ nav .navlinks li a{
     justify-content: space-around;
     align-items: center;
     padding: 4rem;
+
 }
 .container .hero-pic{
     width: 300px;
@@ -253,4 +254,12 @@ nav .navlinks li a{
     .hero-text{
         padding:40px 0px;
     }
+}
+.about-header .wrapper,
+.contact-header .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;     
+    height: 100vh;          
 }
