@@ -125,6 +125,8 @@ nav .navlinks li a{
     padding: 4rem;
     max-width: 800px;
     margin: 0 auto;
+    width: 80%;
+    text-align: center;
 }
 .container .hero-pic{
     width: 300px;
