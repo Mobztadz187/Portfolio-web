@@ -120,7 +120,7 @@ nav .navlinks li a{
 }
 .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 4rem;
     max-width: 800px;
