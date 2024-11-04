@@ -134,10 +134,13 @@ document.querySelectorAll('.navlinks a').forEach(link => {
         const targetId = this.getAttribute('href'); 
         const targetElement = document.querySelector(targetId);
 
+        // Get the position of the target element
         const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
         
-        const offsetPosition = targetElement.getBoundingClientRect().top + window.scrollY - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+        // Adjust to scroll to the center of the element in the viewport
+        const offsetPosition = targetPosition - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
 
+        // Scroll smoothly to the calculated position
         window.scrollTo({
             top: offsetPosition,
             behavior: 'smooth'
