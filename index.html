@@ -129,7 +129,7 @@ document.querySelectorAll('.nav-header a').forEach(link => {
     });
 });
 
-document.querySelectorAll('.navlinks a', 'btn-group a').forEach(link => {
+document.querySelectorAll('.navlinks .btn-group  a').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault(); 
         const targetId = this.getAttribute('href'); 
