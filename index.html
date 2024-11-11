@@ -129,25 +129,25 @@ document.querySelectorAll('.nav-header a').forEach(link => {
     });
 });
 
-document.querySelectorAll('.navlinks a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault(); 
-        const targetId = this.getAttribute('href'); 
-        const targetElement = document.querySelector(targetId);
+//document.querySelectorAll('.navlinks a').forEach(link => {
+    //link.addEventListener('click', function(e) {
+        //e.preventDefault(); 
+        //const targetId = this.getAttribute('href'); 
+        //const targetElement = document.querySelector(targetId);
 
         
-        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        //const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
         
         
-        const offsetPosition = targetPosition - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+        //const offsetPosition = targetPosition - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
 
         
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
-    });
-});
+        //window.scrollTo({
+            //top: offsetPosition,
+            //behavior: 'smooth'
+        //});
+    //});
+//});
     </script>
 </body>
 </html>
