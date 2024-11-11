@@ -121,13 +121,13 @@
             backSpeed: 50,
             loop: true
         };
-        //var typed = new Typed(".typed", options);
-//document.querySelectorAll('.nav-header a').forEach(link => {
-  //  link.addEventListener('click', function() {
-    //    var nav = document.querySelector('.nav-header');
-      //  nav.classList.add('scrolled'); 
-    //});
-//});
+        var typed = new Typed(".typed", options);
+document.querySelectorAll('.nav-header a').forEach(link => {
+    link.addEventListener('click', function() {
+        var nav = document.querySelector('.nav-header');
+        nav.classList.add('scrolled'); 
+    });
+});
 
 document.querySelectorAll('.navlinks a').forEach(link => {
     link.addEventListener('click', function(e) {
