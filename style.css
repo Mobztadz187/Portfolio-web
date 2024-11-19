@@ -132,7 +132,7 @@ nav .navlinks li a{
     width: 80%;
     text-align: center;
 }
-.hero-pic{
+.container .hero-pic{
     width: 200px;
     height: 200px;
     border-radius: 50%;
