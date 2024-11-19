@@ -143,7 +143,6 @@ nav .navlinks li a{
 .hero-pic img{
     height: 100%;
     width: 50%;
-    object-fit: cover;
     border-radius: 50%;
     transition: 0.5s;
 }
