@@ -133,24 +133,16 @@ nav .navlinks li a{
     text-align: center;
 }
 .hero-pic {
-    width: 200px; /* Adjust based on your design */
-    padding-top: 200px; /* This creates a square based on the width */
-    border-radius: 50%; /* This makes it circular */
-    overflow: hidden; /* Ensures the image doesn't overflow */
-    border: 15px solid #444; /* Optional border */
-    box-shadow: 5px 7px 25px rgba(0,0,0,0.5); /* Optional shadow */
-    position: relative; /* Position relative for absolute child */
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide overflow */
 }
 
 .hero-pic img {
-    position: absolute; /* Position absolute to fill the parent */
-    top: 0;
-    left: 0;
-    height: 100%; /* Fill the height */
-    width: 100%; /* Fill the width */
+    width: 100%; /* Fill the container */
+    height: 100%; /* Fill the container */
     object-fit: cover; /* Cover the area without distortion */
-    border-radius: 50%; /* This ensures the image itself is also circular */
-    transition: 0.5s;
 }
 .hero-pic img:hover{
     transform: scale(1.2);
