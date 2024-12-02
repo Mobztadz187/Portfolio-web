@@ -147,7 +147,7 @@ nav .navlinks li a{
     box-shadow: 5px 7px 25px rgba(0,0,0,0.5); /* Optional shadow */
 }
 
-.hero-pic img{
+.container .hero-pic img{
     position: absolute; /* Position absolute to fill the parent */
     top: 0;
     left: 0;
