@@ -130,39 +130,39 @@ nav .navlinks li a{
     width: 80%;
     text-align: center;
 }
-.hero-pic {
+.container.hero-pic {
     width: 200px; /* Set a fixed width */
     height: 200px; /* Set a fixed height */
     border-radius: 25%; /* Make it circular */
     overflow: hidden; /* Hide overflow */
 }
 
-.hero-pic img {
+.container.hero-pic img {
     width: 100%; /* Fill the container */
     height: 100%; /* Fill the container */
    
 }
-.hero-pic img:hover{
+.container.hero-pic img:hover{
     transform: scale(1.2);
 }
-.hero-text{
+.container.hero-text{
     max-width: 500px;
     display: flex;
     flex-direction: column;
 }
-.hero-text h5{
+.container.hero-text h5{
     color: #e5e5e5;
     font-size: 14px;
 }
-.hero-text h5 span{
+.container.hero-text h5 span{
     color: #007ced;
     font-size: 16px;
 }
-.hero-text h1{
+.container.hero-text h1{
     color: #007ced;
     font-size: 3rem;
 }
-.hero-text p{
+.container .hero-text p{
     color:#e5e5e5;
 }
 .btn-group{
