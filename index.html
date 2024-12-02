@@ -140,18 +140,17 @@ document.querySelectorAll('.navlinks a').forEach(link => {
 
         
         const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-        
-        
-        const offsetPosition = targetPosition - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+    
+    
+    const offsetPosition = targetPosition - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
 
-        
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
+    
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
     });
+});
 });
     </script>
 </body>
 </html>
->>>>>>> 7ba84b04b6ef20eefc4959f47b471df0d8f394af
