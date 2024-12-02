@@ -121,7 +121,6 @@ nav .navlinks li a{
     margin-right: 2.5rem;
 }
 
-
 .hero-pic {
     width: 200px; 
     height: 200px; 
@@ -129,8 +128,8 @@ nav .navlinks li a{
     overflow: hidden;
 }
 .hero-pic img {
-    width: 100%; 
-    height: 100%; 
+    width: 80%; 
+    height: 80%; 
    
 }
 .hero-pic img:hover{
