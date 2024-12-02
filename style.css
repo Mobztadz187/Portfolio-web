@@ -150,6 +150,7 @@ nav .navlinks li a{
     width: 100%; /* Fill the width */
     object-fit: cover; /* Cover the area without distortion */
     border-radius: 50%; /* This ensures the image itself is also circular */
+    transition: 0.5s;
 }
 .hero-pic img:hover{
     transform: scale(1.2);
