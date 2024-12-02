@@ -133,8 +133,8 @@ nav .navlinks li a{
     text-align: center;
 }
 .hero-pic {
-    width: 30vw; /* Adjust based on your design */
-    padding-top: 30vw; /* This creates a square based on the width */
+    width: 200px; /* Adjust based on your design */
+    padding-top: 200px; /* This creates a square based on the width */
     border-radius: 50%; /* This makes it circular */
     overflow: hidden; /* Ensures the image doesn't overflow */
     border: 15px solid #444; /* Optional border */
