@@ -133,8 +133,8 @@ nav .navlinks li a{
     text-align: center;
 }
 .hero-pic{
-    width: 30vw;
-    height: 30vw;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     overflow: hidden;
     border: 15px solid #444;
