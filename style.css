@@ -146,6 +146,7 @@ nav .navlinks li a{
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
+    transition: 0.5;
 }
 .hero-pic img:hover{
     transform: scale(1.2);
