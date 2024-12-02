@@ -5,9 +5,7 @@
     font-family: poppins, sans-serif;
     text-decoration: none;
 }
-html{
-    scroll-behavior: smooth;
-}
+
 body{
     overflow-x: hidden;
     margin: 0;
