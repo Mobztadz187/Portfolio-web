@@ -120,21 +120,13 @@ nav .navlinks li a{
     color: #e5e5e5;
     margin-right: 2.5rem;
 }
-.container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 4rem;
-    max-width: 600px;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-}
+
+
 .hero-pic {
     width: 200px; 
     height: 200px; 
     border-radius: 50%; 
-    
+    overflow: hidden;
 }
 .hero-pic img {
     width: 100%; 
