@@ -155,7 +155,7 @@ nav .navlinks li a{
     width: 100%; /* Fill the width */
     object-fit: cover; /* Cover the area without distortion */
 }
-.hero-pic img:hover{
+.container .hero-pic img:hover{
     transform: scale(1.2);
 }
 .hero-text{
