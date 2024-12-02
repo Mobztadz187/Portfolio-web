@@ -138,15 +138,22 @@ nav .navlinks li a{
     border-radius: 50%;
     overflow: hidden;
     border: 15px solid #444;
-    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);width: 50vw; /* Adjust based on your design */
+    padding-top: 100%; /* This creates a square based on the width */
+    position: relative; /* Position relative for absolute child */
+    border-radius: 50%; /* This makes it circular */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    border: 15px solid #444; /* Optional border */
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5); /* Optional shadow */
 }
 
 .hero-pic img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: 0.5;
+    position: absolute; /* Position absolute to fill the parent */
+    top: 0;
+    left: 0;
+    height: 100%; /* Fill the height */
+    width: 100%; /* Fill the width */
+    object-fit: cover; /* Cover the area without distortion */
 }
 .hero-pic img:hover{
     transform: scale(1.2);
