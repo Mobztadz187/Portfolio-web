@@ -199,7 +199,7 @@ nav .navlinks li a{
     box-sizing: border-box;
 }
 
-@media(max-width:930px)
+@media(max-width:940px)
 {
     nav .togglebtn{
         display:initial;
