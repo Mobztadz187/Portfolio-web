@@ -144,6 +144,9 @@ nav .navlinks li a{
 .hero-pic img:hover{
     transform: scale(1.2);
 }
+.pic-hero{
+border: double;
+}
 .hero-text{
     max-width: 500px;
     display: flex;
