@@ -146,6 +146,8 @@ nav .navlinks li a{
 }
 .pic-hero{
 border: double;
+    padding: 50%;
+    
 }
 .hero-text{
     max-width: 500px;
