@@ -91,7 +91,7 @@
                     <input type="number" placeholder="Number"><br><br>
                     <p>Message</p>
                     <input type="text" placeholder="Send your concerns here."><br><br>
-                    <input type="submit" placeholder="Send"><br><br>
+                    <input id="dodge-button" type="submit" placeholder="Send"><br><br>
                 </form>
                 <div class="social">
                         <a href="https://www.facebook.com/jessrey.simeon.1" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -144,6 +144,29 @@ document.querySelectorAll('.navlinks a').forEach(link => {
         behavior: 'smooth'
     });
 });
+});
+
+const button = document.getElementById('dodge-button');
+
+button.addEventListener('mousemove', (e) => {
+    const buttonRect = button.getBoundingClientRect();
+    const cursorX = e.clientX;
+    const cursorY = e.clientY;
+
+    const buttonX = buttonRect.left + buttonRect.width / 2;
+    const buttonY = buttonRect.top + buttonRect.height / 2;
+
+    const distanceX = cursorX - buttonX;
+    const distanceY = cursorY - buttonY;
+
+    const distance = Math.sqrt(distanceX ** 2 + distanceY ** 2);
+
+    if (distance < 100) { // Threshold distance for dodging
+        const offsetX = Math.random() * 200 - 100; // Random offset
+        const offsetY = Math.random() * 200 - 100;
+
+        button.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    }
 });
     </script>
 </body>
