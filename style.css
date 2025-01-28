@@ -249,7 +249,7 @@ nav .navlinks li a{
 .hero-pic img:hover{
     transform: scale(1.2);
 }
-#dodge-button{
+.dodge-button{
     position: relative;
     padding: 10px 20px;
     font-size: 16px;
