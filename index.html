@@ -162,8 +162,8 @@ button.addEventListener('mousemove', (e) => {
     const distance = Math.sqrt(distanceX ** 3 + distanceY ** 3);
 
     if (distance < 100) { // Threshold distance for dodging
-        const offsetX = Math.random() * 300 - 200; // Random offset
-        const offsetY = Math.random() * 300 - 200;
+        const offsetX = Math.random() * 300 - 100; // Random offset
+        const offsetY = Math.random() * 300 - 100;
 
         button.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
     }
