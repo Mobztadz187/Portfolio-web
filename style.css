@@ -130,20 +130,7 @@ nav .navlinks li a{
     width: 100%;
     text-align: center;
 }
-.hero-pic {
-    width: 300px; 
-    height: 300px; 
-    overflow: hidden;
-    border-radius: 50%;
-}
-.hero-pic img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-}
-.hero-pic img:hover{
-    transform: scale(1.2);
-}
+
 .hero-text{
     max-width: 500px;
     display: flex;
@@ -199,7 +186,7 @@ nav .navlinks li a{
     box-sizing: border-box;
 }
 
-@media(max-width:900px)
+@media(max-width:1200px)
 {
     nav .togglebtn{
         display:initial;
@@ -247,4 +234,18 @@ nav .navlinks li a{
     nav .navlinks.open{
         right:0;
     }
+}
+.hero-pic {
+    width: 300px; 
+    height: 300px; 
+    overflow: hidden;
+    border-radius: 50%;
+}
+.hero-pic img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
 }
