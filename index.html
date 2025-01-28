@@ -153,17 +153,17 @@ button.addEventListener('mousemove', (e) => {
     const cursorX = e.clientX;
     const cursorY = e.clientY;
 
-    const buttonX = buttonRect.left + buttonRect.width / 2;
-    const buttonY = buttonRect.top + buttonRect.height / 2;
+    const buttonX = buttonRect.left + buttonRect.width / 3;
+    const buttonY = buttonRect.top + buttonRect.height / 3;
 
     const distanceX = cursorX - buttonX;
     const distanceY = cursorY - buttonY;
 
-    const distance = Math.sqrt(distanceX ** 2 + distanceY ** 2);
+    const distance = Math.sqrt(distanceX ** 3 + distanceY ** 3);
 
     if (distance < 100) { // Threshold distance for dodging
-        const offsetX = Math.random() * 200 - 100; // Random offset
-        const offsetY = Math.random() * 200 - 100;
+        const offsetX = Math.random() * 300 - 200; // Random offset
+        const offsetY = Math.random() * 300 - 200;
 
         button.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
     }
